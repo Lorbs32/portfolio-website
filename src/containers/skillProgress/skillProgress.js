@@ -1,8 +1,8 @@
 import React from "react";
 import "./Progress.scss";
-import {illustration, techStack} from "../../portfolio";
-import {Fade} from "react-reveal";
-import Build from "../../assets/lottie/build";
+import { illustration, techStack } from "../../portfolio";
+import { Fade } from "react-reveal";
+import kyleProficiencyAnimation from "../../assets/lottie/kyleProficiencyAnimation.json";
 import DisplayLottie from "../../components/displayLottie/DisplayLottie";
 
 export default function StackProgress() {
@@ -27,9 +27,9 @@ export default function StackProgress() {
             })}
           </div>
 
-          <div className="skills-image">
+          <div className="skills-image-div">
             {illustration.animated ? (
-              <DisplayLottie animationData={Build} />
+              <DisplayLottie animationData={kyleProficiencyAnimation} loop={false} />
             ) : (
               <img
                 alt="Skills"

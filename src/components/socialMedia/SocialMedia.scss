@@ -68,6 +68,31 @@
   background-color: $instagram;
 }
 
+.icon-button.leetcode {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.6rem;
+  width: 2.6rem;
+  background-color: #f89f1b; // LeetCode orange
+  border-radius: 2.6rem;
+  margin: 0 5px;
+  margin-bottom: 10px;
+  transition: 0.2s ease-in;
+
+  img.social-icon {
+    height: 1.3rem;
+    width: 1.3rem;
+    filter: brightness(0) invert(1);
+    transition: 0.2s ease-in;
+  }
+
+  &:hover {
+    background-color: $textColor;
+    transform: scale(1.1);
+  }
+}
+
 /* Hover Transition */
 .twitter i:hover,
 .google i:hover,
@@ -80,6 +105,7 @@
 .kaggle i:hover,
 .medium i:hover {
   background-color: $textColor;
+  transform: scale(1.1);
 }
 
 /* Media Query */
