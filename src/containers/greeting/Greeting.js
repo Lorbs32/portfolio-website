@@ -36,13 +36,20 @@ export default function Greeting() {
               >
                 {greeting.subTitle}
               </p>
-              <div id="resume" className="empty-div"></div>
-              <SocialMedia />
 
+              <div className="personal-contact-info" style={{ marginTop: "8px", textAlign: "left" }}>
+                <p style={{ margin: "4px 0" }}>🚩 Ann Arbor, MI</p>
+                <p style={{ margin: "4px 0" }}><strong>Open to Opportunities:</strong> Yes</p>
+              </div>
+
+              <div id="resume" className="empty-div"></div>
+
+
+              {/* Buttons */}
               <div className="button-greeting-div"
-                style={{ marginTop: "32px" }}
+                style={{ marginTop: "0px" }}
               >
-                <Button text="Contact me" href="#contact" />
+                {/* <Button text="Contact me" href="#contact" /> */}
                 {greeting.resumeLink && (
                   <a
                     href={greeting.resumeLink}
@@ -57,9 +64,11 @@ export default function Greeting() {
             </div>
           </div>
 
+          {/* Hero image (Right Side Div) */}
           <div className="greeting-image-div"
             style={{
               display: "flex",
+              flexDirection: "column",
               justifyContent: "center",
               alignItems: "center",
               minHeight: "250px"
@@ -77,21 +86,20 @@ export default function Greeting() {
                 boxShadow: "0 0 0 10px #007acc, 0 0 10px rgba(0, 122, 204, 0.6)",
                 display: "block",
                 margin: "0 auto",
-                marginTop: "48px"
-                //border: "10px solid #007acc"
+                marginTop: "48px",
+                marginBottom: "48px"
               }}
+
             //className="profile-image"
             />
-            {
-            /* {illustration.animated ? (
-              <DisplayLottie animationData={landingPerson} />
-            ) : (
-              <img
-                alt="man sitting on table"
-                src={require("../../assets/images/manOnTable.svg")}
-              ></img>
-            )} */}
+            <div style={{ marginTop: "0px", textAlign: "center" }}>
+              <p className="subTitle skills-text" style={{ marginBottom: "12px" }}>
+                Feel free to reach out!
+              </p>
+              <SocialMedia />
+            </div>
           </div>
+
         </div>
       </div>
     </Fade>

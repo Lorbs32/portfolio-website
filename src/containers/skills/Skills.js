@@ -43,7 +43,9 @@ export default function Skills() {
             >
               {skillsSection.subTitle}
             </p>
-            <SoftwareSkill />
+            <div style={{ marginTop: "75px" }}>
+              <SoftwareSkill />
+            </div>
             <div>
               {skillsSection.skills.map((skills, i) => {
                 return (

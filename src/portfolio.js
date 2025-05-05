@@ -23,7 +23,7 @@ const greeting = {
   username: "Kyle Lohrberg",
   title: "Hi all, I'm Kyle",
   subTitle: emoji(
-    "A passionate Java back-end developer 💻 with experience building Spring Boot applications, Android apps with Kotlin, and clean APIs. I love solving problems, organizing code, and bringing ideas to life."
+    "An aspiring junior developer focused on back-end technologies like Java and Spring Boot. I love solving logic problems, writing clean code, and being a dependable teammate—someone who communicates clearly and follows through on their work."
   ),
   resumeLink:
     "https://docs.google.com/document/d/1g_wuC_zvjN23f0N_Tjk0uSOrhgKNqM_auukVTfy2kQQ/edit?usp=sharing", // Set to empty to hide the button
@@ -46,8 +46,8 @@ const socialMediaLinks = {
 // Skills Section
 
 const skillsSection = {
-  title: "What I do",
-  subTitle: "CRAZY FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK",
+  title: "I have experience with",
+  subTitle: "",
   skills: [
     emoji("⚡ Building and maintaining Spring Boot applications with Java"),
     emoji("⚡ Writing clean, maintainable code using MVC architecture and layered service design"),
@@ -133,7 +133,7 @@ const educationInfo = {
 // Your top 3 proficient stacks/tech experience
 
 const techStack = {
-  viewSkillBars: true, //Set it to true to show Proficiency Section
+  viewSkillBars: false, //Set it to true to show Proficiency Section
   experience: [
     {
       Stack: "Java/Spring Framework", //Insert stack or technology you have experience in
@@ -170,29 +170,59 @@ const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
     {
-      role: "Software Engineer",
-      company: "Facebook",
-      companylogo: require("./assets/images/facebookLogo.png"),
-      date: "June 2018 – Present",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      role: "Fitness Specialist",
+      company: "Power Wellness",
+      companylogo: require("./assets/images/powerwellness.jpg"),
+      date: "Nov 2020 – Present",
+      desc: "",
       descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+        "Instruct all types of clients one-on-one with exercise and nutrition advice",
+        "Diligently stay organized to keep track of 40+ participants at one time"
       ]
     },
     {
-      role: "Front-End Developer",
-      company: "Quora",
-      companylogo: require("./assets/images/quoraLogo.png"),
-      date: "May 2017 – May 2018",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      role: "Store Associate",
+      company: "ALDI",
+      companylogo: require("./assets/images/aldi.jpg"),
+      date: "July 2020 – Nov 2020",
+      desc: "",
+      descBullets: [
+        "Used POS systems to quickly and accurately complete customer purchases while handling multiple types of payment methods",
+        "Stocked and maintained store inventory while also maintaining store cleanliness according to strict store policies"
+      ]
     },
     {
-      role: "Software Engineer Intern",
-      company: "Airbnb",
-      companylogo: require("./assets/images/airbnbLogo.png"),
-      date: "Jan 2015 – Sep 2015",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      role: "Personal Trainer",
+      company: "West Hills Athletic Club",
+      companylogo: require("./assets/images/westhills.jpg"),
+      date: "Oct 2018 – May 2019",
+      desc: "",
+      descBullets: [
+        "Conducted personal assessments, one-on-one and small group training for members",
+        "Created celebratory social media posts to cheer on my clients"
+      ]
+    },
+    {
+      role: "Health Fitness Specialist",
+      company: "Corporate Fitness Works",
+      companylogo: require("./assets/images/corporatefitnessworks.jpg"),
+      date: "May 2018 – Oct 2018",
+      desc: "",
+      descBullets: [
+        "Worked as a part of a team to create, implement and execute health and fitness programs site wide",
+        "Performed a variety of personal training roles including, assessments, one-on-one and small group training of clients on site"
+      ]
+    },
+    {
+      role: "Fitness Staff",
+      company: "Bronson Athletic Club",
+      companylogo: require("./assets/images/bronson.webp"),
+      date: "Aug 2014 – Jan 2018",
+      desc: "",
+      descBullets: [
+        "Maintained and supervised the fitness floor while building member relationships and monitoring safety",
+        "Guided and educated new members on program offerings and fitness equipment orientations"
+      ]
     }
   ]
 };
@@ -200,17 +230,25 @@ const workExperiences = {
 // Some big projects you have worked on
 
 const bigProjects = {
-  title: "Big Projects",
-  subtitle: "SOME STARTUPS AND COMPANIES THAT I HELPED TO CREATE THEIR TECH",
+  title: "Skills Showcase",
+  subtitle: "Here are a few major projects I've worked on. Click to explore documentation, demos, or code.",
   projects: [
     {
-      image: require("./assets/images/saayaHealthLogo.webp"),
-      projectName: "Saayahealth",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      //image: require("./assets/images/showMeTheMoney.png"),
+      projectName: "Team Budget Application",
+      projectDesc: "Java Spring Boot budgeting app with income, expenses, subscriptions, and data visualizations.",
       footerLink: [
         {
           name: "Visit Website",
           url: "http://saayahealth.com/"
+        },
+        {
+          name: "Documentation",
+          url: "https://github.com/Lorbs32/Budget-Application/wiki"
+        },
+        {
+          name: "Demo Video",
+          url: "https://youtu.be/your-demo-video-link"
         }
         //  you can add extra buttons here.
       ]
@@ -227,7 +265,7 @@ const bigProjects = {
       ]
     }
   ],
-  display: false // Set false to hide this section, defaults to true
+  display: true // Set false to hide this section, defaults to true
 };
 
 // Achievement Section
@@ -368,10 +406,10 @@ const contactInfo = {
 
 const twitterDetails = {
   userName: "twitter", //Replace "twitter" with your twitter username without @
-  display: true // Set true to display this section, defaults to false
+  display: false // Set true to display this section, defaults to false
 };
 
-const isHireable = false; // Set false if you are not looking for a job. Also isHireable will be display as Open for opportunities: Yes/No in the GitHub footer
+const isHireable = true; // Set false if you are not looking for a job. Also isHireable will be display as Open for opportunities: Yes/No in the GitHub footer
 
 export {
   illustration,
