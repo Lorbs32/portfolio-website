@@ -1,16 +1,17 @@
-import React, {useContext} from "react";
-import {Fade} from "react-reveal";
+import React, { useContext } from "react";
+import { Fade } from "react-reveal";
 import emoji from "react-easy-emoji";
 import "./Greeting.scss";
-import landingPerson from "../../assets/lottie/landingPerson";
-import DisplayLottie from "../../components/displayLottie/DisplayLottie";
+//import landingPerson from "../../assets/lottie/landingPerson";
+//import DisplayLottie from "../../components/displayLottie/DisplayLottie";
 import SocialMedia from "../../components/socialMedia/SocialMedia";
 import Button from "../../components/button/Button";
-import {illustration, greeting} from "../../portfolio";
+//import {illustration, greeting} from "../../portfolio";
 import StyleContext from "../../contexts/StyleContext";
+import { greeting } from "../../portfolio";
 
 export default function Greeting() {
-  const {isDark} = useContext(StyleContext);
+  const { isDark } = useContext(StyleContext);
   if (!greeting.displayGreeting) {
     return null;
   }
@@ -39,10 +40,10 @@ export default function Greeting() {
 
               <div
                 className="personal-contact-info"
-                style={{marginTop: "8px", textAlign: "left"}}
+                style={{ marginTop: "8px", textAlign: "left" }}
               >
-                <p style={{margin: "4px 0"}}>🚩 Ann Arbor, MI</p>
-                <p style={{margin: "4px 0"}}>
+                <p style={{ margin: "4px 0" }}>🚩 Ann Arbor, MI</p>
+                <p style={{ margin: "4px 0" }}>
                   <strong>Open to Opportunities:</strong> Yes
                 </p>
               </div>
@@ -50,7 +51,7 @@ export default function Greeting() {
               <div id="resume" className="empty-div"></div>
 
               {/* Buttons */}
-              <div className="button-greeting-div" style={{marginTop: "0px"}}>
+              <div className="button-greeting-div" style={{ marginTop: "0px" }}>
                 {/* <Button text="Contact me" href="#contact" /> */}
                 {greeting.resumeLink && (
                   <a
@@ -94,12 +95,12 @@ export default function Greeting() {
                 marginBottom: "48px"
               }}
 
-              //className="profile-image"
+            //className="profile-image"
             />
-            <div style={{marginTop: "0px", textAlign: "center"}}>
+            <div style={{ marginTop: "0px", textAlign: "center" }}>
               <p
                 className="subTitle skills-text"
-                style={{marginBottom: "12px"}}
+                style={{ marginBottom: "12px" }}
               >
                 Feel free to reach out!
               </p>
