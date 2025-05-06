@@ -50,8 +50,12 @@ const skillsSection = {
   subTitle: "",
   skills: [
     emoji("⚡ Building and maintaining Spring Boot applications with Java"),
-    emoji("⚡ Writing clean, maintainable code using MVC architecture and layered service design"),
-    emoji("⚡ Designing RESTful APIs and connecting services to MySQL or H2 databases")
+    emoji(
+      "⚡ Writing clean, maintainable code using MVC architecture and layered service design"
+    ),
+    emoji(
+      "⚡ Designing RESTful APIs and connecting services to MySQL or H2 databases"
+    )
   ],
 
   /* Make Sure to include correct Font Awesome Classname to view your icon
@@ -113,10 +117,10 @@ const educationInfo = {
       logo: require("./assets/images/wcc.png"),
       subHeader: "Associates of Computer Science in Programming in Java",
       duration: "April 2025",
-      desc: "Participated in the research of XXX and published 3 papers.",
+      desc: "Hands-on coursework in Java, Spring Boot, Android development, and relational databases.",
       descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+        "Built full-stack projects with clean architecture and version control",
+        "Gained experience with REST APIs, MVC design, and backend logic"
       ]
     },
     {
@@ -124,8 +128,11 @@ const educationInfo = {
       logo: require("./assets/images/wmu.png"),
       subHeader: "Bachelor of Science in Exercise Science",
       duration: "April 2018",
-      desc: "Ranked top 10% in the program. Took courses about Software Engineering, Web Security, Operating Systems, ...",
-      descBullets: ["Lorem ipsum dolor sit amet, consectetur adipiscing elit"]
+      desc: "Built strong foundations in communication, discipline, and collaboration through years of client-based training work.",
+      descBullets: [
+        "Worked as a personal trainer during and after school, strengthening one-on-one coaching and reliability",
+        "Experience from this degree shaped my soft skills now used in software teamwork"
+      ]
     }
   ]
 };
@@ -154,7 +161,6 @@ const techStack = {
   ],
   displayCodersrank: false // Set true to display codersrank badges section need to changes your username in src/containers/skillProgress/skillProgress.js:17:62, defaults to false
 };
-
 
 /* Your Open Source Section to View Your Github Pinned Projects
 To know how to get github key look at readme.md */
@@ -231,16 +237,18 @@ const workExperiences = {
 
 const bigProjects = {
   title: "Skills Showcase",
-  subtitle: "Here are a few major projects I've worked on. Click to explore documentation, demos, or code.",
+  subtitle:
+    "Here are a few major projects I've worked on. Click to explore documentation, demos, or code.",
   projects: [
     {
       //image: require("./assets/images/showMeTheMoney.png"),
-      projectName: "Team Budget Application",
-      projectDesc: "Java Spring Boot budgeting app with income, expenses, subscriptions, and data visualizations.",
+      projectName: "Java",
+      projectDesc:
+        "Solid foundation in object-oriented programming with Java. Experience with backend logic, data structures, and Spring integration.",
       footerLink: [
         {
-          name: "Visit Website",
-          url: "http://saayahealth.com/"
+          name: "Visit Java Project",
+          url: "https://github.com/Lorbs32/Budget-Application"
         },
         {
           name: "Documentation",
@@ -248,6 +256,10 @@ const bigProjects = {
         },
         {
           name: "Demo Video",
+          url: "https://youtu.be/your-demo-video-link"
+        },
+        {
+          name: "View Code Snippet",
           url: "https://youtu.be/your-demo-video-link"
         }
         //  you can add extra buttons here.
@@ -318,7 +330,7 @@ const achievementSection = {
       image: require("./assets/images/pwaLogo.webp"),
       imageAlt: "PWA Logo",
       footerLink: [
-        { name: "Certification", url: "" },
+        {name: "Certification", url: ""},
         {
           name: "Final Project",
           url: "https://pakistan-olx-1.firebaseapp.com/"

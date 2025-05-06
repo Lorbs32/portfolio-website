@@ -5,18 +5,25 @@
   height: auto;
   width: 250px;
 }
+
 .card-title {
   color: $titleColor;
-  font-size: 22px;
+  text-align: left;
+  font-size: 45px !important;
   line-height: 24px;
   font-weight: 700;
-  margin: 15px 0 0 0;
+  margin-top: 0;
+  margin-bottom: 10px;
+  position: static;
 }
+
 .card-subtitle {
   color: $cardSubtitle;
+  text-align: left;
   font-size: 17px;
   line-height: 1.5rem;
 }
+
 .project-card {
   display: flex;
   flex-direction: column;
@@ -26,6 +33,7 @@
   border: 1px solid $lightBorder1;
   justify-content: center;
 }
+
 .project-card-light {
   box-shadow: $lightBoxShadowDark 0px 10px 30px -15px;
   -webkit-transition: all 0.3s ease;
@@ -41,14 +49,22 @@
 }
 
 .project-detail {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  //text-align: center;
+  text-align: left;
+  padding: 16px 20px;
 }
+
 .project-card-light:hover {
   box-shadow: $lightBoxShadowDark 0px 20px 30px -10px;
 }
+
 .project-card-dark:hover {
   box-shadow: 0px 20px 30px -10px $darkBoxShadow;
 }
+
 .project-image {
   position: relative;
   height: 250px;

@@ -1,4 +1,4 @@
-import React, { Component, Suspense } from "react";
+import React, {Component, Suspense} from "react";
 import Lottie from "lottie-react";
 import Loading from "../../containers/loading/Loading";
 
@@ -15,14 +15,14 @@ export default class DisplayLottie extends Component {
     // Restart after delay
     setTimeout(() => {
       if (lottie) {
-        lottie.stop();   // rewind to frame 0
-        lottie.play();   // play again
+        lottie.stop(); // rewind to frame 0
+        lottie.play(); // play again
       }
     }, 3000); // delay in ms
   };
 
   render() {
-    const { animationData } = this.props;
+    const {animationData} = this.props;
 
     return (
       <Suspense fallback={<Loading />}>

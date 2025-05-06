@@ -1,16 +1,16 @@
-import React, { useContext } from "react";
-import { Fade } from "react-reveal";
+import React, {useContext} from "react";
+import {Fade} from "react-reveal";
 import emoji from "react-easy-emoji";
 import "./Greeting.scss";
 import landingPerson from "../../assets/lottie/landingPerson";
 import DisplayLottie from "../../components/displayLottie/DisplayLottie";
 import SocialMedia from "../../components/socialMedia/SocialMedia";
 import Button from "../../components/button/Button";
-import { illustration, greeting } from "../../portfolio";
+import {illustration, greeting} from "../../portfolio";
 import StyleContext from "../../contexts/StyleContext";
 
 export default function Greeting() {
-  const { isDark } = useContext(StyleContext);
+  const {isDark} = useContext(StyleContext);
   if (!greeting.displayGreeting) {
     return null;
   }
@@ -37,18 +37,20 @@ export default function Greeting() {
                 {greeting.subTitle}
               </p>
 
-              <div className="personal-contact-info" style={{ marginTop: "8px", textAlign: "left" }}>
-                <p style={{ margin: "4px 0" }}>🚩 Ann Arbor, MI</p>
-                <p style={{ margin: "4px 0" }}><strong>Open to Opportunities:</strong> Yes</p>
+              <div
+                className="personal-contact-info"
+                style={{marginTop: "8px", textAlign: "left"}}
+              >
+                <p style={{margin: "4px 0"}}>🚩 Ann Arbor, MI</p>
+                <p style={{margin: "4px 0"}}>
+                  <strong>Open to Opportunities:</strong> Yes
+                </p>
               </div>
 
               <div id="resume" className="empty-div"></div>
 
-
               {/* Buttons */}
-              <div className="button-greeting-div"
-                style={{ marginTop: "0px" }}
-              >
+              <div className="button-greeting-div" style={{marginTop: "0px"}}>
                 {/* <Button text="Contact me" href="#contact" /> */}
                 {greeting.resumeLink && (
                   <a
@@ -65,7 +67,8 @@ export default function Greeting() {
           </div>
 
           {/* Hero image (Right Side Div) */}
-          <div className="greeting-image-div"
+          <div
+            className="greeting-image-div"
             style={{
               display: "flex",
               flexDirection: "column",
@@ -83,23 +86,26 @@ export default function Greeting() {
                 height: "350px",
                 borderRadius: "50%",
                 objectFit: "cover",
-                boxShadow: "0 0 0 10px #007acc, 0 0 10px rgba(0, 122, 204, 0.6)",
+                boxShadow:
+                  "0 0 0 10px #007acc, 0 0 10px rgba(0, 122, 204, 0.6)",
                 display: "block",
                 margin: "0 auto",
                 marginTop: "48px",
                 marginBottom: "48px"
               }}
 
-            //className="profile-image"
+              //className="profile-image"
             />
-            <div style={{ marginTop: "0px", textAlign: "center" }}>
-              <p className="subTitle skills-text" style={{ marginBottom: "12px" }}>
+            <div style={{marginTop: "0px", textAlign: "center"}}>
+              <p
+                className="subTitle skills-text"
+                style={{marginBottom: "12px"}}
+              >
                 Feel free to reach out!
               </p>
               <SocialMedia />
             </div>
           </div>
-
         </div>
       </div>
     </Fade>

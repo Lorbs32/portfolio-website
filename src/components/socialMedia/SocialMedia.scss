@@ -71,6 +71,8 @@
 .icon-button.leetcode {
   display: inline-flex;
   align-items: center;
+  position: relative;
+  top: 2px;
   justify-content: center;
   height: 2.6rem;
   width: 2.6rem;
@@ -78,11 +80,13 @@
   border-radius: 2.6rem;
   margin: 0 5px;
   margin-bottom: 10px;
+  vertical-align: baseline;
   transition: 0.2s ease-in;
 
   img.social-icon {
     height: 1.3rem;
     width: 1.3rem;
+
     filter: brightness(0) invert(1);
     transition: 0.2s ease-in;
   }
