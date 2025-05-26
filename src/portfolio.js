@@ -27,6 +27,10 @@ const greeting = {
   ),
   resumeLink:
     "https://docs.google.com/document/d/1g_wuC_zvjN23f0N_Tjk0uSOrhgKNqM_auukVTfy2kQQ/edit?usp=sharing", // Set to empty to hide the button
+  linkedInLink:
+    "https://www.linkedin.com/in/kylelohrberg/",
+  githubLink:
+    "https://github.com/Lorbs32",
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
@@ -330,7 +334,7 @@ const achievementSection = {
       image: require("./assets/images/pwaLogo.webp"),
       imageAlt: "PWA Logo",
       footerLink: [
-        {name: "Certification", url: ""},
+        { name: "Certification", url: "" },
         {
           name: "Final Project",
           url: "https://pakistan-olx-1.firebaseapp.com/"

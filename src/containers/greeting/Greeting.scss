@@ -16,27 +16,58 @@
 
 .greeting-main {
   display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2rem;
+  flex-wrap: wrap;
+
+  @media only screen and (max-width: 768px) {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
 }
 
+// .greeting-main {
+//   display: flex;
+// }
+
+// .profile-image {
+//   width: 125px;
+//   height: 125px;
+//   border-radius: 50%;
+//   object-fit: cover;
+//   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+//   display: block;
+//   margin: 0 auto;
+// }
+
 .profile-image {
-  width: 125px;
-  height: 125px;
+  width: 350px;
+  max-width: 90%;
+  height: 350px;
   border-radius: 50%;
   object-fit: cover;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
   display: block;
   margin: 0 auto;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  box-shadow: 0 0 0 10px #007acc, 0 0 10px rgba(0, 122, 204, 0.6);
+
+  @media only screen and (max-width: 992px) {
+    width: 250px;
+    height: 250px;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
 }
 
 .subTitle {
   color: $subTitle !important;
 }
 
-.greeting-main {
-  display: flex;
-}
-
-.greeting-main > * {
+.greeting-main>* {
   flex: 1;
   margin-bottom: 30px;
 }
@@ -46,9 +77,23 @@
 }
 
 .button-greeting-div {
+  background-color: rgba(0, 255, 0, 0.1); // light green debug
+  padding: 1rem;
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
   margin-top: 40px;
+
+  @media only screen and (max-width: 992px) {
+    justify-content: center;
+  }
 }
+
+// .button-greeting-div {
+//   display: flex;
+//   margin-top: 40px;
+// }
 
 .download-link-button {
   text-decoration: none;
@@ -65,9 +110,28 @@
   line-height: 40px;
 }
 
-.greeting-image-div > img {
+.greeting-image-div {
+  background-color: rgba(255, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 250px;
+  margin-bottom: 2rem; // ✅ This adds the space you need
+
+  @media only screen and (max-width: 768px) {
+    margin-top: 3rem;
+    margin-bottom: 3rem; // Optional: a little more on phones
+  }
+}
+
+.greeting-image-div>img {
   max-width: 100%;
   height: auto;
+
+  @media only screen and (max-width: 992px) {
+    margin-top: 4rem; // ✅ This anchors the image back down
+  }
 }
 
 .wave-emoji {
@@ -119,7 +183,7 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   .button-greeting-div {
     justify-content: space-around;
   }
