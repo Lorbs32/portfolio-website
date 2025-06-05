@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/portfolio-website/static/css/main.795362bf.css",
+    "main.js": "/portfolio-website/static/js/main.714f5de6.js",
+    "static/css/64.bba8fa55.chunk.css": "/portfolio-website/static/css/64.bba8fa55.chunk.css",
+    "static/js/64.56dc6704.chunk.js": "/portfolio-website/static/js/64.56dc6704.chunk.js",
+    "static/media/Montserrat-Regular.ttf": "/portfolio-website/static/media/Montserrat-Regular.3cd786652b8a2e9d41f2.ttf",
+    "static/media/Agustina.woff": "/portfolio-website/static/media/Agustina.eb0c59dda4cc308cba96.woff",
+    "static/media/wcc.png": "/portfolio-website/static/media/wcc.ab9a6a45086af09ae037.png",
+    "static/media/wmu.png": "/portfolio-website/static/media/wmu.2e20f85d8a370a0c27f6.png",
+    "static/media/developerActivity.svg": "/portfolio-website/static/media/developerActivity.2c0445cae86f4243433a2f5a22b2c031.svg",
+    "static/media/googleAssistantLogo.webp": "/portfolio-website/static/media/googleAssistantLogo.f720c71652579588524a.webp",
+    "static/media/aldi.jpg": "/portfolio-website/static/media/aldi.64c35c409e29b31352a8.jpg",
+    "static/media/codeInLogo.webp": "/portfolio-website/static/media/codeInLogo.e41a71d512efeda2a55c.webp",
+    "static/media/skill.svg": "/portfolio-website/static/media/skill.35a147662ab0a1d15e579690446e0258.svg",
+    "static/media/pwaLogo.webp": "/portfolio-website/static/media/pwaLogo.8bf2293da0ca66249e37.webp",
+    "static/media/nextuLogo.webp": "/portfolio-website/static/media/nextuLogo.e033dbfa4c58c0a906aa.webp",
+    "static/media/bronson.webp": "/portfolio-website/static/media/bronson.b044082ab31d1ec04f60.webp",
+    "index.html": "/portfolio-website/index.html",
+    "static/media/talksCardBack.svg": "/portfolio-website/static/media/talksCardBack.73ed1545d58273ba64b0.svg",
+    "main.795362bf.css.map": "/portfolio-website/static/css/main.795362bf.css.map",
+    "main.714f5de6.js.map": "/portfolio-website/static/js/main.714f5de6.js.map",
+    "64.bba8fa55.chunk.css.map": "/portfolio-website/static/css/64.bba8fa55.chunk.css.map",
+    "64.56dc6704.chunk.js.map": "/portfolio-website/static/js/64.56dc6704.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.795362bf.css",
+    "static/js/main.714f5de6.js"
+  ]
+}
