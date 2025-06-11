@@ -48,10 +48,22 @@ export default function Greeting() {
                 </p>
               </div>
 
-              <div id="resume" className="empty-div"></div>
+              {/* <div id="resume" className="empty-div"></div> */}
 
               {/* Buttons */}
-              <div className="button-greeting-div" style={{ marginTop: "0px" }}>
+              <div
+                className="button-greeting-div"
+                style={{
+                  marginTop: "0px",
+                  display: "flex",
+                  flexDirection: "row",     // keep buttons horizontal
+                  gap: "0px",               // reduce spacing between buttons
+                  flexWrap: "wrap",         // responsive behavior
+                  alignItems: "center"
+                }}
+              >
+
+                {/* Resume Button */}
                 {/* <Button text="Contact me" href="#contact" /> */}
                 {greeting.resumeLink && (
                   <a
@@ -63,6 +75,8 @@ export default function Greeting() {
                     <Button text="View Resume" />
                   </a>
                 )}
+
+                {/* LinkedIn Button */}
                 {greeting.linkedInLink && (
                   <a
                     className="download-link-button"
@@ -74,6 +88,7 @@ export default function Greeting() {
                   </a>
                 )}
 
+                {/* Github Button */}
                 {greeting.githubLink && (
                   <a
                     className="download-link-button"
@@ -118,18 +133,22 @@ export default function Greeting() {
 
               className="profile-image"
             />
-            <div style={{ marginTop: "0px", textAlign: "center" }}>
-              <p
-                className="subTitle skills-text"
-                style={{ marginBottom: "12px" }}
-              >
-                Feel free to reach out!
-              </p>
+            <div
+              className="subTitle skills-text"
+              style={{
+                marginBottom: "12px",
+                display: "flex",
+                alignItems: "center",
+                gap: "10px"
+              }}
+            >
+              <span>Feel free to reach out!</span>
               <SocialMedia />
+
             </div>
           </div>
         </div>
       </div>
-    </Fade>
+    </Fade >
   );
 }

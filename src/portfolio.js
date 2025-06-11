@@ -37,11 +37,12 @@ const greeting = {
 // Social Media Links
 
 const socialMediaLinks = {
-  github: "https://github.com/lorbs32",
-  linkedin: "https://www.linkedin.com/in/kylelohrberg/",
+  //resume: "/files/Kyle-Lohrberg-Resume.pdf",
+  //github: "https://github.com/lorbs32",
+  //linkedin: "https://www.linkedin.com/in/kylelohrberg/",
   gmail: "lorbs32@gmail.com",
-  leetcode: "https://leetcode.com/u/lorbs32/",
-  facebook: "https://www.facebook.com/kyle.lohrberg",
+  //leetcode: "https://leetcode.com/u/lorbs32/",
+  //facebook: "https://www.facebook.com/kyle.lohrberg",
   // Instagram, Twitter and Kaggle are also supported in the links!
   // To customize icons and social links, tweak src/components/SocialMedia
   display: true // Set true to display this section, defaults to false
@@ -237,6 +238,7 @@ const workExperiences = {
   ]
 };
 
+// Skills Showcase
 // Some big projects you have worked on
 
 const bigProjects = {
@@ -281,7 +283,7 @@ const bigProjects = {
       ]
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Achievement Section

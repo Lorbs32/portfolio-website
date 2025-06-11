@@ -1,6 +1,6 @@
 import React from "react";
 import "./SocialMedia.scss";
-import {socialMediaLinks} from "../../portfolio";
+import { socialMediaLinks } from "../../portfolio";
 
 export default function socialMedia() {
   if (!socialMediaLinks.display) {
@@ -8,6 +8,20 @@ export default function socialMedia() {
   }
   return (
     <div className="social-media-div">
+
+      {socialMediaLinks.resume && (
+        <a
+          href={socialMediaLinks.resume}
+          download
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Download Resume"
+          title="Download Resume"
+        >
+          <i className="fas fa-arrow-down"></i>
+        </a>
+      )}
+
       {socialMediaLinks.github ? (
         <a
           href={socialMediaLinks.github}
@@ -36,8 +50,8 @@ export default function socialMedia() {
         <a
           href={`mailto:${socialMediaLinks.gmail}`}
           className="icon-button google"
-          target="_blank"
-          rel="noopener noreferrer"
+        // target="_blank"
+        // rel="noopener noreferrer"
         >
           <i className="fas fa-envelope"></i>
           <span></span>
@@ -131,6 +145,7 @@ export default function socialMedia() {
           <span></span>
         </a>
       ) : null}
+
 
       {socialMediaLinks.kaggle ? (
         <a
