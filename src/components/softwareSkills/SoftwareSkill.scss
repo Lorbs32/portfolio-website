@@ -15,17 +15,39 @@
   margin-bottom: 20px;
 }
 
-.software-skill-inline > i {
+.software-skill-inline>i {
   color: $subTitle;
+  transition: all 0.3s ease;
+  transform: scale(1);
 }
 
-.software-skill-inline > i:hover {
+.software-skill-inline>i:hover {
   color: $skillsColor;
+  transform: scale(1.1);
 }
-.software-skill-inline > p {
+
+.software-skill-inline>p {
   color: $subTitle;
   font-size: 10px;
+  transition: all 0.3s ease;
 }
-.software-skill-inline > i:hover ~ p {
+
+.software-skill-inline:hover>p {
   color: $skillsColor;
+}
+
+.custom-icon {
+  width: 45px;
+  height: 45px;
+  color: $subTitle;
+  margin-bottom: 0px;
+  filter: grayscale(100%) brightness(0.7) contrast(1);
+  transition: all 0.3s ease;
+  transform: scale(1.1); // default scale
+}
+
+.custom-icon:hover {
+  color: $skillsColor;
+  filter: grayscale(0%) brightness(0.8) hue-rotate(110deg);
+  transform: scale(1.2);
 }

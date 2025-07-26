@@ -1,0 +1,89 @@
+.main {
+    padding: 40px 20px;
+    text-align: left;
+}
+
+.project-header h1 {
+    font-size: 3.5rem;
+    margin-bottom: 4rem;
+}
+
+.project-header p {
+    font-size: 1.1rem;
+    color: gray;
+}
+
+.project-grid {
+    display: grid;
+    gap: 24px;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    align-items: stretch;
+}
+
+.project-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%; // for grid stretch
+    min-height: 350px; // adjust based on content
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.project-card p {
+    color: #8a8a8a; // ✅ or use the actual hex code like #a8a8a8
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+.project-icons {
+    margin-top: 10px;
+}
+
+.tech-icon {
+    height: 30px;
+    font-size: 1.5rem;
+    margin: 0 5px;
+    filter: grayscale(100%) brightness(0.7);
+    transition: all 0.3s ease;
+}
+
+.tech-icon:hover {
+    filter: none;
+    transform: scale(1.1);
+}
+
+.project-buttons {
+    margin-top: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-buttons button {
+    margin: 5px;
+    padding: 6px 12px;
+    font-size: 0.5 rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+}
+
+.project-buttons button:hover {
+    background-color: #0056b3;
+}
+
+.project-content {
+    flex-grow: 1;
+}

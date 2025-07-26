@@ -59,7 +59,7 @@ const skillsSection = {
       "⚡ Writing clean, maintainable code using MVC architecture and layered service design"
     ),
     emoji(
-      "⚡ Designing RESTful APIs and connecting services to MySQL or H2 databases"
+      "⚡ Designing RESTful APIs and connecting services to MySQL and mongoDB"
     )
   ],
 
@@ -81,33 +81,47 @@ can upload manual icons in src/components/softwareSkills.js */
     //   fontAwesomeClassname: "fa fa-cogs"
     // },
     {
-      skillName: "Github",
-      fontAwesomeClassname: "fab fa-github"
+      skillName: "Python",
+      fontAwesomeClassname: "fab fa-python"
     },
     {
-      skillName: "html-5",
-      fontAwesomeClassname: "fab fa-html5"
+      skillName: "Flask",
+      fontAwesomeClassname: "fas fa-flask"
     },
     {
-      skillName: "sql-database",
+      skillName: "React",
+      fontAwesomeClassname: "fab fa-react"
+    },
+
+    // {
+    //   skillName: "html-5",
+    //   fontAwesomeClassname: "fab fa-html5"
+    // },
+    {
+      skillName: "MySQL",
       fontAwesomeClassname: "fas fa-database"
     },
     {
-      skillName: "android",
-      fontAwesomeClassname: "fab fa-android"
+      skillName: "mongoDB",
+      iconUrl: "/icons/mongodb.svg"
     },
+
+    //{
+    //   skillName: "android",
+    //   fontAwesomeClassname: "fab fa-android"
+    // },
     {
       skillName: "aws",
       fontAwesomeClassname: "fab fa-aws"
     },
     {
-      skillName: "python",
-      fontAwesomeClassname: "fab fa-python"
-    },
-    {
       skillName: "docker",
       fontAwesomeClassname: "fab fa-docker"
-    }
+    },
+    {
+      skillName: "Github",
+      fontAwesomeClassname: "fab fa-github"
+    },
   ],
   display: true // Set false to hide this section, defaults to true
 };
@@ -172,7 +186,46 @@ To know how to get github key look at readme.md */
 
 const openSource = {
   showGithubProfile: "true", // Set true or false to show Contact profile using Github, defaults to true
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
+};
+
+export const projectShowcase = {
+  title: "Check out how I've been improving",
+  subtitle: "Custom built portfolio projects with backend logic and RESTful APIs.",
+  projects: [
+    {
+      title: "AdminFlow",
+      description: "A project management app built with Java, Spring Boot, and MySQL. Helps teams track projects, assign tasks, and monitor progress in a streamlined, database-driven workflow.",
+      github: "https://github.com/lorbs32/adminflow",
+      //demo: "", // optional
+      //docs: "", // optional
+      icons: ["java", "spring", "mysql", "aws", "github"] // these map to icon assets or fontawesome
+    },
+    {
+      title: "TherapyTrackr",
+      description: "A hybrid physical therapy clinic management system built with Python, Flask, and MongoDB. Tracks patient appointments, therapist notes, custom workout plans, insurance details, and progress updates. Designed to streamline in-hospital rehab while supporting both therapists and staff.",
+      github: "https://github.com/lorbs32/therapytrackr",
+      //demo: "https://youtube.com",
+      //docs: "https://youtube.com",
+      icons: ["python", "flask", "react", "docker", "aws"]
+    },
+    {
+      title: "DataBridge",
+      description: "A backend data integration and migration service for importing, transforming, and exporting customer data across systems. Built with Spring Boot, JPA, and MySQL to support CRM automation and batch processing workflows.",
+      github: "https://github.com/lorbs32/databridge",
+      //demo: "",
+      //docs: "",
+      icons: ["java", "spring", "mysql", "react", "github"]
+    },
+    {
+      title: "BudgetingApp",
+      description: "A collaborative budgeting tool to track income, expenses, and recurring subscriptions monthly. Built with Java, Spring Boot, Thymeleaf, and H2 for dynamic server-side rendering and data handling.",
+      github: "https://github.com/lorbs32/budget-application",
+      //demo: "",
+      //docs: "",
+      icons: ["java", "spring", "mysql", "github"]
+    }
+  ]
 };
 
 // Work experience section
@@ -246,6 +299,18 @@ const bigProjects = {
   subtitle:
     "Here are a few major projects I've worked on. Click to explore documentation, demos, or code.",
   projects: [
+    {
+      projectName: "AdminFlow",
+      projectDesc: "A project management app built with Java Spring Boot and MySQL.",
+      tags: ["Java", "Spring Boot", "MySQL"],
+      footerLink: [
+        {
+          name: "View Code",
+          url: "https://github.com/lorbs32/adminflow"
+        }
+        // You can add more buttons like "Demo" later!
+      ]
+    },
     {
       //image: require("./assets/images/showMeTheMoney.png"),
       projectName: "Java",
