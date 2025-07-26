@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.1af75a38.css",
-    "main.js": "/static/js/main.d9247e08.js",
+    "main.css": "/static/css/main.c64df01d.css",
+    "main.js": "/static/js/main.92a84640.js",
     "static/css/64.bba8fa55.chunk.css": "/static/css/64.bba8fa55.chunk.css",
     "static/js/64.56dc6704.chunk.js": "/static/js/64.56dc6704.chunk.js",
     "static/media/Montserrat-Regular.ttf": "/static/media/Montserrat-Regular.3cd786652b8a2e9d41f2.ttf",
@@ -18,13 +18,13 @@
     "static/media/bronson.webp": "/static/media/bronson.b044082ab31d1ec04f60.webp",
     "index.html": "/index.html",
     "static/media/talksCardBack.svg": "/static/media/talksCardBack.73ed1545d58273ba64b0.svg",
-    "main.1af75a38.css.map": "/static/css/main.1af75a38.css.map",
-    "main.d9247e08.js.map": "/static/js/main.d9247e08.js.map",
+    "main.c64df01d.css.map": "/static/css/main.c64df01d.css.map",
+    "main.92a84640.js.map": "/static/js/main.92a84640.js.map",
     "64.bba8fa55.chunk.css.map": "/static/css/64.bba8fa55.chunk.css.map",
     "64.56dc6704.chunk.js.map": "/static/js/64.56dc6704.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1af75a38.css",
-    "static/js/main.d9247e08.js"
+    "static/css/main.c64df01d.css",
+    "static/js/main.92a84640.js"
   ]
 }
